@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Dashboard</h1>
+    <h2>Páginas do Facebook</h2>
+    <ul>
+        {% for page in pages %}
+        <li>{{ page.name }} - ID: {{ page.id }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Conta(s) do Instagram</h2>
+    <ul>
+        {% for account in instagram_accounts %}
+        <li>ID: {{ account.id }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Mídia do Instagram</h2>
+    <ul>
+        {% for media in media_objects %}
+        <li>ID: {{ media.id }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
