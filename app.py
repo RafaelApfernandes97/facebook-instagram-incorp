@@ -5,7 +5,7 @@ app = Flask(__name__)
 app.secret_key = '6694cd47e3d9b5b01f02d78bfa2ad49c'
 app_id = "925203059235069"
 app_secret = "6694cd47e3d9b5b01f02d78bfa2ad49c"
-redirect_uri = 'http://localhost:5000/facebook/callback'
+redirect_uri = 'https://meta-meta.mg9com.easypanel.host/facebook/callback'
 
 @app.route('/')
 def home():
